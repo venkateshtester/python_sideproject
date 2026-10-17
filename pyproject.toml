@@ -1,0 +1,19 @@
+[project]
+name = "python-sideproject"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "venkateshttester", email = "venkateshanandhan22@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.142.2",
+]
+
+[project.scripts]
+python-sideproject = "python_sideproject:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
