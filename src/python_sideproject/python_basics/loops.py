@@ -127,10 +127,10 @@ else:
     print("Loop finished without break")
 
 # Practical example: keep asking until the input is valid
-password = ""
-while password != "python":
-    password = input("Enter password: ")
-print("Access granted")
+#password = ""
+#while password != "python":
+ #   password = input("Enter password: ")
+#print("Access granted")
 
 # Digits of a number
 num = 1234
@@ -139,3 +139,26 @@ while num > 0:
     digit_sum = digit_sum + num % 10  # last digit
     num = num // 10                   # remove last digit
 print("Digit sum:", digit_sum)
+
+
+num = 123
+rev =0
+while num>0:
+    n = num%10
+    rev = rev*10+n
+    num=num//10
+
+print(rev)
+
+
+num = 121
+rev=0
+pal=num
+while num>0:
+    n = num%10
+    rev=rev*10+n
+    num=num//10;
+if pal==rev:
+    print('This is palindrome');
+else:
+    print('this is not an palindrome')
